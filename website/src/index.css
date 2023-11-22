@@ -1,0 +1,16 @@
+:root {
+    --white:        #fff;
+    --mainBlue:     #252934;
+    --mainBlueDark: #1B242F;
+
+    --accentBlue: #ffffff;
+    --accentRed:    #F5186F;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}

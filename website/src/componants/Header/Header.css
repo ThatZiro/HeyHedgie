@@ -1,0 +1,78 @@
+header{
+    margin: 0;
+    padding: 10px 50px;
+    background: var(--mainBlue);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1{
+    color: var(--accentRed);
+    font-size: 5rem;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 5px;
+}
+.nametag {
+    position: relative;
+    color: var(--white);
+    text-align: right;
+    padding: 10px 50px;
+    transform: translateX(50px);
+    background: linear-gradient(90deg, var(--mainBlue) 0%, var(--mainBlueDark) 100%);
+    transition: background 0.3s ease;
+}
+.nametag::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    background: linear-gradient(90deg, var(--mainBlue) 0%, var(--accentBlue) 100%);
+    transition: width 0.3s ease;
+    z-index: 1;
+}
+
+.nametag:hover::after {
+    width: 100%;
+    z-index: -1;
+}
+
+header h2{
+    font-size: 2rem;
+}
+
+header p{
+    font-size: 1rem;
+}
+
+.profile-pic {
+    position: relative;
+}
+.profile svg {
+    position: relative;
+    z-index: 1;
+}
+
+.profile .status{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.profile img {
+    position: absolute;
+    z-index: 2;
+    width: 85%;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+}
+

@@ -1,0 +1,227 @@
+:root{
+    --cardHeader: #fff;
+    --cardContent: rgba(255, 255, 255, 0.5);
+
+    --dashboard-gradient: linear-gradient(119deg, rgba(245, 24, 111, 0.20) 18.02%, rgba(0, 189, 197, 0.20) 88.89%);
+}
+.dashboard{
+    background: var(--dashboard-gradient);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dashboard .container{
+    max-width: 1250px;
+}
+.quote{
+    background: var(--cardContent);
+    text-align: center;
+    padding: 10px;
+    color: var(--mainBlue);
+    font-style: italic;
+    width: 100vw;
+}
+.card {
+    margin: 25px;
+}
+
+.card .card-header{
+    background: var(--cardHeader);
+    border-radius: 50px 50px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    font-size: 1rem;
+}
+
+.card .card-content{
+    background: var(--cardContent);
+    border-radius: 0 0 50px 50px;
+    padding: 10px 50px;
+    /*TODO Fix card-content to drop to size of div*/
+}
+
+.dashboard-section-1,
+.dashboard-section-2,
+.dashboard-section-3{
+    display: flex;
+}
+
+.dashboard-section-1 .card:nth-child(1), .dashboard-section-2 .card:nth-child(1), .dashboard-section-3 .card:nth-child(1) {
+    width: 66%;
+}
+
+.dashboard-section-1 .card:nth-child(2), .dashboard-section-2 .card:nth-child(2), .dashboard-section-3 .card:nth-child(2) {
+    width: 33%;
+}
+
+.daily-question {
+    background: var(--white);
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+.daily-question svg:hover {
+    scale: 105%;
+    cursor: pointer;
+}
+
+.daily-question p {
+    font-size: 1.5rem;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.streak {
+    display: flex;
+}
+
+.streak-counter {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+}
+
+.streak-counter h2 {
+    font-size: 2rem;
+}
+.streak-counter h3 {
+    font-size: 1rem;
+}
+
+.goal {
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    margin: 10px -25px;
+}
+.goal h2 {
+    font-size: 1.5rem;
+    color: white;
+}
+.goal h3 {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.75);
+}
+/* ============================================================ */
+/*                          Goal Colors                         */
+/* ============================================================ */
+
+.goal-bg-blue{
+    background: #B5DDD1;
+}
+.goal-bg-green{
+    background: #D7E7A9;
+}
+.goal-bg-purple{
+    background: #D3C0F9;
+}
+.goal-bg-red{
+    background: #F99A9C;
+}
+.goal-bg-pink{
+    background: #FDBCCF;
+}
+
+/* ============================================================ */
+/*                            Check Box                         */
+/* ============================================================ */
+.checkbox-wrapper:hover .check {
+    stroke-dashoffset: 0;
+}
+
+.checkbox-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+.checkbox-wrapper .background {
+    fill: rgba(0, 0, 0, 0.4);
+    transition: ease all 0.6s;
+    -webkit-transition: ease all 0.6s;
+}
+
+.checkbox-wrapper .stroke {
+    fill: none;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    stroke-width: 2px;
+    stroke-dashoffset: 100;
+    stroke-dasharray: 100;
+    transition: ease all 0.6s;
+    -webkit-transition: ease all 0.6s;
+}
+
+.checkbox-wrapper .check {
+    fill: none;
+    stroke: #fff;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2px;
+    stroke-dashoffset: 22;
+    stroke-dasharray: 22;
+    transition: ease all 0.6s;
+    -webkit-transition: ease all 0.6s;
+}
+
+.checkbox-wrapper input[type=checkbox] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    margin: 0;
+    opacity: 0;
+    -webkit-appearance: none;
+    z-index: 10;
+}
+
+.checkbox-wrapper input[type=checkbox]:hover {
+    cursor: pointer;
+}
+
+.checkbox-wrapper input[type=checkbox]:checked + svg .background {
+    fill: rgba(0, 0, 0, 0.2);
+}
+
+.checkbox-wrapper input[type=checkbox]:checked + svg .stroke {
+    stroke-dashoffset: 0;
+}
+
+.checkbox-wrapper input[type=checkbox]:checked + svg .check {
+    stroke-dashoffset: 0;
+}
+
+.definition .card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+
+}
+.definition .card-content h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.definition .card-content p {
+    font-size: 1rem;
+    opacity: 50%;
+}
+
+.mantra .card-content h2 {
+    font-size:  2rem;
+    text-align: center;
+    font-style: italic;
+
+}
+
