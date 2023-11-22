@@ -10,12 +10,12 @@
 <br />
 <div style="text-align: center;">
   <a href="https://github.com/ThatZiro/HeyHedgie/">
-    <img src="./README_Assets/README-Logo.png" alt="Logo" style="width: 256px;">
+    <img align="center" src="./README_Assets/README-Logo.png" alt="Logo" style="width: 256px;">
   </a>
 
 <h3 align="center">Hey Hedgie</h3>
 
-<div> style="text-align: center;">
+<div style="text-align: center;">
     <p>Embark on a journey of self-discovery, fueled by the whimsical charm. Join a community of kindred spirits, where friendship blossoms, self-reflection thrives, and together, we inspire and hold each other accountable on the delightful path to personal growth and symbolic connections.</p>
     <p>-Join the community today!</p>
 </div>
