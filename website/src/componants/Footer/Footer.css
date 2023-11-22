@@ -1,0 +1,46 @@
+.footer {
+    background: var(--mainBlue);
+}
+.footer .upper{
+    padding: 10px 50px;
+    border-bottom: 2px solid var(--white);
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .upper .section-info{
+    width: 25%;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.footer .upper .section-links {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    padding: 25px 10px
+}
+
+
+.footer .upper .section {
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer .upper a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.footer .lower{
+    padding: 10px 50px;
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .lower a{
+
+}

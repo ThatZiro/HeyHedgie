@@ -233,7 +233,7 @@
 
 
 .dr-footer{
-    background: linear-gradient(180deg, var(--accentBlueLight) 0%, var(--accentBlue) 100%);
+    background: linear-gradient(180deg, var(--accentBlueLight) 0%, rgba(245, 24, 111, 0.5) 100%);
     display: flex;
     justify-content: space-evenly;
     padding: 50px 0;
