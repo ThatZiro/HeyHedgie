@@ -8,10 +8,11 @@
 
 <!-- PROJECT LOGO -->
 <br />
-<div style="text-align: center;">
-  <a href="https://github.com/ThatZiro/HeyHedgie/">
-    <img src="./README_Assets/README-Logo.png" alt="Logo" style="width: 256px; text-align: center;">
-  </a>
+<div align="center">
+
+<a href="https://github.com/ThatZiro/HeyHedgie/">
+  <img src="./README_Assets/README-Logo.png" alt="Logo" width="256">
+</a>
 
 
 # Hey Hedgie
