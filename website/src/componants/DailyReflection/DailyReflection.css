@@ -1,0 +1,241 @@
+:root {
+    --accentBlueLight: rgb(176, 245, 255);
+}
+
+.dr-header {
+    background: var(--mainBlue);
+    color: var(--accentRed);
+    border-bottom: 4px solid var(--accentBlue);
+
+}
+
+.dr-header h1 {
+    font-size: 3rem;
+    padding: 25px;
+    text-align: center;
+}
+
+.dr-content {
+    position: relative;
+    padding: 25px 0;
+    background: var(--accentBlueLight);
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.dr-journal {
+    background: transparent;
+    width: 60%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    z-index: 10;
+}
+
+.dr-journal * {
+    width: 40%;
+}
+
+.dr-journal h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 14px;
+}
+
+.dr-journal .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.dr-journal .section {
+    /*background: rgba(0, 0, 0, 0.1);*/
+    width: 100%;
+}
+.dr-journal .section-empty{
+    background: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+.dr-journal .section-empty:hover{
+    background: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.dr-journal .section-empty p {
+    text-align: center;
+    font-size: 4rem;
+    color: #858585;
+}
+
+.dr-journal .content h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    position: relative;
+    padding: 0;
+    text-align: start;
+    color: #F5186F;
+}
+
+.dr-journal .content textarea {
+    background: transparent;
+    font-size: 1rem;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    overflow-y: hidden;
+    border: 1px dashed transparent;
+}
+.dr-journal .content textarea:hover {
+    border: 1px dashed rgba(0, 0, 0, 0.4);
+}
+.dr-journal .content textarea:focus {
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.sidebar {
+    background: var(--cardContent);
+    border-radius: 50px 0 0 50px ;
+    padding: 50px 0;
+
+}
+.sidebar-left {
+    border-radius: 0 50px 50px 0;
+}
+
+.sidebar button{
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    transition: transform ease-in-out .2s;
+}
+.sidebar button:first-child{
+    border-top: 2px solid rgba(0, 0, 0, 0.2);
+}
+.sidebar button:hover {
+    transform: scalex(105%);
+}
+
+.dr-footer button{
+    background: var(--mainBlue);
+    color: white;
+    border-radius: 50px;
+    padding: 10px 50px;
+    transition: all ease-in-out .2s;
+}
+.dr-footer button:hover{
+    background: var(--accentRed);
+    transform: scalex(110%);
+}
+
+
+/* ================================================== */
+/*                       Journal Art                  */
+/* ================================================== */
+
+.art {
+    position: absolute;
+    width: 60%;
+    height: 60vh;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+}
+.art .cover {
+    position: absolute;
+    background: #726E6B;
+    inset: 0;
+}
+.art .page1 {
+    position: absolute;
+    background: #D9D9D9;
+    left: 10px;
+    right: 10px;
+    top: 8px;
+    bottom: 6px;
+}
+.art .page2 {
+    position: absolute;
+    background: #E7E7E7;
+    left: 18px;
+    right: 18px;
+    top: 8px;
+    bottom: 6px;
+}
+.art .page3 {
+    position: absolute;
+    background: #ffffff;
+    left: 32px;
+    right: 32px;
+    top: 8px;
+    bottom: 6px;
+}
+.art .pagecenter {
+    position: absolute;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0%, #c4c4c4 48.44%, rgba(252, 252, 252, 0.00) 100%);
+    width: 5%;
+    right: 50%;
+    top: 8px;
+    bottom: 6px;
+    transform: translatex(50%);
+}
+.paper {
+    position: absolute;
+    box-sizing: border-box;
+    left: 32px;
+    right: 32px;
+    top: 75px;
+    bottom: 6px;
+    background-image: linear-gradient(#ffffff 1.1rem, #ccc 1.2rem);
+    background-size: 100% 1.2rem;
+    border-radius: 10px;
+    cursor: move;
+}
+
+.paper::before,
+.paper::after {
+    position: absolute;
+    content: "";
+    bottom: 10px;
+    width: 40%;
+    height: 10px;
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.7);
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.paper::before {
+    left: 15px;
+    transform: skew(-5deg) rotate(-5deg);
+}
+
+.paper::after {
+    right: 15px;
+    transform: skew(5deg) rotate(5deg);
+}
+
+.paper:hover::before,
+.paper:hover::after {
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.4);
+}
+
+
+
+.dr-footer{
+    background: linear-gradient(180deg, var(--accentBlueLight) 0%, var(--accentBlue) 100%);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 0;
+
+}

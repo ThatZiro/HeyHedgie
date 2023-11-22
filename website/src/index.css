@@ -3,8 +3,8 @@
     --mainBlue:     #252934;
     --mainBlueDark: #1B242F;
 
-    --accentBlue: #ffffff;
-    --accentRed:    #F5186F;
+    --accentBlue:   #00b0b3;
+    --accentRed: rgb(245, 24, 111);
 }
 * {
     padding: 0;
