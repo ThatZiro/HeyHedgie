@@ -10,7 +10,7 @@
 <br />
 <div style="text-align: center;">
   <a href="https://github.com/ThatZiro/HeyHedgie/">
-    <img src="./README_Assets/README-Logo.png" alt="Logo" style="width: 256px; text-align: center;">
+    <img src="./README_Assets/README-Logo.png" alt="Logo" style="width: 256px; margin: auto; display: block;">
   </a>
 
 <h3 align="center">Hey Hedgie</h3>
